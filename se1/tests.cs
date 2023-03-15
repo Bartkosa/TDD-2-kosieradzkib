@@ -15,7 +15,8 @@ namespace se1
             Console.WriteLine(Test_add(functions));
 
         }
-
+        
+        [Test]
         static bool Test_add(functions functions)
         {
             // Given
