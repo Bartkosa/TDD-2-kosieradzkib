@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace se1
 {
-    internal class tests
+    public class tests
     {
         public tests()
         {
