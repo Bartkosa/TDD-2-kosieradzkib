@@ -1,41 +1,24 @@
-global using NUnit.Framework;
+using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace se1
 {
-    public class tests
+    [TestFixture]
+    public class CalculatorTests
     {
-        public tests()
-        {
-            functions functions = new functions();
-
-            Console.WriteLine(Test_add(functions));
-
-        }
-        
         [Test]
-        static bool Test_add(functions functions)
+        public void Test_add()
         {
             // Given
+            functions functions = new functions();
             string numbers = "//[***][;;]\n22;;13***20";
             int expected_value = 55;
-            int result;
 
             // When
-            if (String.IsNullOrEmpty(numbers))
-            {
-                Console.WriteLine("empty string");
-                return false;
-            }
-
-            result = functions.Add(numbers);
+            int result = functions.Add(numbers);
 
             // Then
-            return result.Equals(expected_value);
+            Assert.AreEqual(expected_value, result);
         }
     }
 }
