@@ -1,4 +1,5 @@
-﻿using System;
+global using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -7,11 +8,10 @@ using System.Threading.Tasks;
 
 namespace se1
 {
-    internal class functions
+    public class functions
     {
         static void Main(string[] args)
         {
-            tests tests = new tests();
         }
 
         public int Add(string numbers)
