@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+global using NUnit.Framework;
 
 namespace se1
 {
@@ -16,6 +17,7 @@ namespace se1
 
         }
         
+        [Test]
         static bool Test_add(functions functions)
         {
             // Given
